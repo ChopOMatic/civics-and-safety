@@ -1,0 +1,380 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(2, 12, 27, 0.8), rgba(2, 12, 27, 0.8)), url('/hero.png');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 10vw, 5rem);
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-dim);
+  max-width: 600px;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  padding: 8rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.card {
+  background: var(--bg-card);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.module-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  background: rgba(212, 175, 55, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.lesson-list {
+  list-style: none;
+  margin-top: 1.5rem;
+  text-align: left;
+  border-top: 1px solid var(--primary-light);
+  padding-top: 1rem;
+}
+
+.lesson-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+  color: var(--text-dim);
+  border-bottom: 1px solid rgba(23, 42, 69, 0.5);
+}
+
+.lesson-list li:last-child {
+  border-bottom: none;
+}
+
+.lesson-list .duration {
+  font-size: 0.75rem;
+  color: var(--accent);
+  opacity: 0.8;
+}
+
+footer {
+  padding: 4rem 0;
+  border-top: 1px solid var(--primary-light);
+  text-align: center;
+  color: var(--text-dim);
+}
+
+/* Module Reader Styles */
+.module-nav {
+  background: var(--bg-card);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--accent);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.module-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  font-family: var(--font-serif);
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.module-reader {
+  display: flex;
+  gap: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+
+.module-sidebar {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.module-sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--primary-light);
+  padding-bottom: 0.5rem;
+}
+
+.module-sidebar ul {
+  list-style: none;
+}
+
+.lesson-item {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.95rem;
+  color: var(--text-dim);
+}
+
+.lesson-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+}
+
+.lesson-item.active {
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--accent);
+  border-left: 3px solid var(--accent);
+}
+
+.lesson-item.completed {
+  color: var(--text-main);
+  opacity: 0.8;
+}
+
+.lesson-item.completed .status-dot {
+  background: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  margin-right: 12px;
+}
+
+.progress-mini {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  background: var(--bg-main);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid var(--primary-light);
+}
+
+.lesson-number {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #888;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.lesson-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.module-content {
+  flex-grow: 1;
+}
+
+/* Quiz Component Styles */
+.quiz-container {
+  padding: 3rem;
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--accent);
+  color: var(--text-main);
+  animation: fadeIn 0.5s ease-out;
+  margin-top: 2rem;
+}
+
+.quiz-header {
+  margin-bottom: 2rem;
+}
+
+.quiz-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.question-text {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-family: var(--font-serif);
+}
+
+.options-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.option-btn {
+  text-align: left;
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  color: var(--text-main);
+  font-weight: 400;
+  transition: var(--transition);
+  border-radius: 4px;
+}
+
+.option-btn:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-color: var(--accent);
+  transform: translateX(5px);
+}
+
+.quiz-container.results {
+  text-align: center;
+}
+
+.score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.score {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.content-parchment {
+  background: var(--parchment);
+  color: var(--parchment-text);
+  padding: 4rem;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  min-height: 80vh;
+}
+
+.content-parchment h1 {
+  color: var(--parchment-text);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.lex-quote {
+  font-style: italic;
+  font-family: var(--font-serif);
+  border-left: 2px solid var(--accent);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.lex-quote .source {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #888;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.article-body p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.ai-insight-box {
+  margin-top: 4rem;
+  background: var(--bg-card);
+  color: var(--text-main);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+}
+
+.ai-insight-box h4 {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sparkle {
+  color: var(--accent);
+}

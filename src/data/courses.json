@@ -1,0 +1,80 @@
+[
+    {
+        "id": "intro-foundations",
+        "title": "Module 1: Foundational Frameworks",
+        "description": "An introduction to the origins of modern law and the social contract theory.",
+        "lessons": [
+            {
+                "id": "m1-l1",
+                "title": "Lex Naturalis vs. Lex Scripta",
+                "duration": "15 mins"
+            },
+            {
+                "id": "m1-l2",
+                "title": "The Magna Carta & Common Law",
+                "duration": "20 mins"
+            },
+            {
+                "id": "m1-l3",
+                "title": "Constitutional Boundaries",
+                "duration": "25 mins"
+            }
+        ]
+    },
+    {
+        "id": "rights-responsibilities",
+        "title": "Module 2: Rights & Responsibilities",
+        "description": "Balancing individual autonomy with the safety of the collective.",
+        "lessons": [
+            {
+                "id": "m2-l1",
+                "title": "Unalienable Rights Explorer",
+                "duration": "18 mins"
+            },
+            {
+                "id": "m2-l2",
+                "title": "The Social Contract in Practice",
+                "duration": "22 mins"
+            }
+        ]
+    },
+    {
+        "id": "navigating-systems",
+        "title": "Module 3: Navigating Modern Systems",
+        "description": "Practical safety and legal navigation in contemporary society.",
+        "lessons": [
+            {
+                "id": "m3-l1",
+                "title": "Statutory Interpretation",
+                "duration": "30 mins"
+            },
+            {
+                "id": "m3-l2",
+                "title": "Public Safety Protocols",
+                "duration": "15 mins"
+            }
+        ]
+    },
+    {
+        "id": "safety-protocols",
+        "title": "Module 4: Safety & Community Protocols",
+        "description": "Practical skills for maintaining individual and community safety in complex legal environments.",
+        "lessons": [
+            {
+                "id": "m4-l1",
+                "title": "Interaction with Authority",
+                "duration": "20 mins"
+            },
+            {
+                "id": "m4-l2",
+                "title": "Conflict De-escalation",
+                "duration": "25 mins"
+            },
+            {
+                "id": "m4-l3",
+                "title": "Emergency Coordination",
+                "duration": "15 mins"
+            }
+        ]
+    }
+]
