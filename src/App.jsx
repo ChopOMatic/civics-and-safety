@@ -79,62 +79,92 @@ function App() {
 
         <main className="container module-reader">
           <aside className="module-sidebar">
-            <h3>Module Map</h3>
+            <div className="sidebar-header">
+              <h3>Module Map</h3>
+              <p className="subtitle">{activeModule.title}</p>
+            </div>
             <ul>
               {activeModule.lessons.map((lesson, idx) => (
                 <li
                   key={lesson.id}
-                  className={`lesson-item ${idx === currentLessonIndex ? 'active' : ''} ${isLessonComplete(activeModule.id, lesson.id) ? 'completed' : ''}`}
-                  onClick={() => setCurrentLessonIndex(idx)}
+                  className={`lesson-item ${idx === currentLessonIndex && !isQuizActive ? 'active' : ''} ${isLessonComplete(activeModule.id, lesson.id) ? 'completed' : ''}`}
+                  onClick={() => {
+                    setCurrentLessonIndex(idx);
+                    setIsQuizActive(false);
+                  }}
                 >
                   <span className="status-dot"></span>
-                  {lesson.title}
+                  <div className="lesson-info">
+                    <span className="lesson-label">Lesson {idx + 1}</span>
+                    <span className="lesson-title">{lesson.title}</span>
+                  </div>
                 </li>
               ))}
+              <li
+                className={`lesson-item quiz-item ${isQuizActive ? 'active' : ''}`}
+                onClick={() => {
+                  if (activeModule.lessons.every(l => isLessonComplete(activeModule.id, l.id))) {
+                    setIsQuizActive(true);
+                  }
+                }}
+              >
+                <span className="status-dot"></span>
+                <div className="lesson-info">
+                  <span className="lesson-label">Final Assessment</span>
+                  <span className="lesson-title">Knowledge Review</span>
+                </div>
+              </li>
             </ul>
           </aside>
 
           <section className="module-content">
             <div className="content-parchment">
-              <span className="lesson-number">Lesson {currentLessonIndex + 1}</span>
-              <h1>{currentLesson.title}</h1>
-              <p className="lex-quote">
-                "Justice is the constant and perpetual will to render to every man his due."
-                <br /><span className="source">— Justinian I</span>
-              </p>
-              <div className="article-body">
-                {isQuizActive ? (
-                  <Quiz module={activeModule} onComplete={() => setCurrentView('landing')} />
-                ) : (
-                  <>
-                    <p>
-                      To understand the foundations of liberty, one must first distinguish between
-                      Natural Law (Lex Naturalis) and Written Law (Lex Scripta). Natural Law is
-                      philosophical and universal, while Written Law is the specific code adopted
-                      by a society to maintain order.
-                    </p>
-                    <p>
-                      In this lesson, we will explore why the differentiation is critical for
-                      navigating modern jurisprudence. This is particularly relevant for those seeking
-                      to understand the limits of statutory authority...
-                    </p>
+              {isQuizActive ? (
+                <Quiz module={activeModule} onComplete={() => {
+                  setCurrentView('landing');
+                  window.scrollTo(0, 0);
+                }} />
+              ) : (
+                <>
+                  <span className="lesson-number">Lesson {currentLessonIndex + 1} of {activeModule.lessons.length}</span>
+                  <h1>{currentLesson.title}</h1>
 
-                    <div className="ai-insight-box">
-                      <h4><span className="sparkle">✨</span> AI Insight (Google Credits)</h4>
-                      <p>
-                        {dynamicInsight || "Analyzing lesson context..."}
-                      </p>
-                    </div>
-                  </>
-                )}
-              </div>
+                  <div className="article-body">
+                    {currentLesson.content.split('\n\n').map((paragraph, pIdx) => {
+                      if (paragraph.startsWith('**The Reality:**') || paragraph.startsWith('**The Facts:**')) {
+                        return (
+                          <div key={pIdx} className="fact-box">
+                            <span className="box-label">FACT</span>
+                            <p>{paragraph.replace(/^\*\*The Reality:\*\*\s*|^\*\*The Facts:\*\*\s*/, '')}</p>
+                          </div>
+                        );
+                      }
+                      if (paragraph.startsWith('**The Sovereignty Myth:**') || paragraph.startsWith('**The Argument:**')) {
+                        return (
+                          <div key={pIdx} className="myth-box">
+                            <span className="box-label">COMMON ARGUMENT</span>
+                            <p>{paragraph.replace(/^\*\*The Sovereignty Myth:\*\*\s*|^\*\*The Argument:\*\*\s*/, '')}</p>
+                          </div>
+                        );
+                      }
+                      return <p key={pIdx}>{paragraph}</p>;
+                    })}
+                  </div>
 
-              {!isQuizActive && (
-                <div className="lesson-footer">
-                  <button className="primary" onClick={completeLesson}>
-                    {currentLessonIndex < activeModule.lessons.length - 1 ? 'Next Lesson' : 'Move to Knowledge Check'}
-                  </button>
-                </div>
+                  <div className="ai-insight-box">
+                    <h4><span className="sparkle">✨</span> Deep Dive Analysis</h4>
+                    <p className="insight-text">
+                      {dynamicInsight || "Synthesizing legal precedents..."}
+                    </p>
+                    <span className="insight-footer">Generated via High-Tier Synthesis</span>
+                  </div>
+
+                  <div className="lesson-footer">
+                    <button className="primary big" onClick={completeLesson}>
+                      {currentLessonIndex < activeModule.lessons.length - 1 ? 'Complete & Continue' : 'Finish Lessons & Start Quiz'}
+                    </button>
+                  </div>
+                </>
               )}
             </div>
           </section>

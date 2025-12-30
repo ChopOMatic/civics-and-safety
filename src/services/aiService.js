@@ -1,33 +1,33 @@
-/**
- * AI Service for Civics & Safety Platform
- * Handles content generation and insights using Google AI and Nano-Banana.
- */
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
-// Placeholder for API Keys - These should be in .env in a real environment
-const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_AI_KEY;
-const NANO_BANANA_KEY = import.meta.env.VITE_NANO_BANANA_KEY;
+const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GOOGLE_AI_KEY);
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-export const generateInsight = async (topic, context) => {
-    console.log(`Generating insight for ${topic} using Google AI Credits...`);
+export async function generateInsight(lessonTitle, moduleTitle) {
+    const prompt = `
+    You are a high-level legal scholar and civics educator specializing in debunking pseudolegal theories (specifically sovereign citizen ideologies).
+    
+    The user is currently studying the lesson: "${lessonTitle}" within the module: "${moduleTitle}".
+    
+    Provide a concise (2-3 sentences), authoritative "Deep Dive Analysis" that connects this lesson to actual U.S. jurisprudence. 
+    Focus on WHY the pseudo-legal arguments (like the right to travel, the 1871 Organic Act, or the Strawman theory) fail in court.
+    Use terms like "police power," "territorial jurisdiction," "statutory definition," and cite real concepts from Constitutional Law.
+    
+    Maintain a respectful, educational, but firm tone. Do not use placeholders.
+  `;
 
-    // Real implementation would use @google/generative-ai
-    // For this demo, we simulate a response
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve({
-                text: `Based on constitutional precedents regarding ${topic}, it is important to note that the boundaries of ${context} are strictly defined by both common law and modern statutes.`,
-                source: "Civics AI Engine"
-            });
-        }, 1000);
-    });
-};
-
-export const generateRemedialContent = async (ideology, currentLevel) => {
-    if (NANO_BANANA_KEY) {
-        console.log("Leveraging Premium Nano-Banana Pro for complex remedial logic...");
-        // Simulate high-tier specialized generation
-        return "Premium content synthesized for foundational transition.";
+    try {
+        const result = await model.generateContent(prompt);
+        const response = await result.response;
+        return {
+            text: response.text(),
+            status: 'success'
+        };
+    } catch (error) {
+        console.error("AI Generation Error:", error);
+        return {
+            text: "Jurisprudential analysis unavailable. Please refer to the core lesson content for factual guidance.",
+            status: 'fallback'
+        };
     }
-
-    return "Standard pedagogical content generated via fallback.";
-};
+}

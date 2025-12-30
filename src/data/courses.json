@@ -1,79 +1,103 @@
 [
     {
-        "id": "intro-foundations",
-        "title": "Module 1: Foundational Frameworks",
-        "description": "An introduction to the origins of modern law and the social contract theory.",
+        "id": "m1",
+        "title": "Module 1: The 'Right to Travel' vs. Motor Vehicle Statutes",
+        "description": "Deconstructing the pseudo-legal distinction between 'traveling' and 'driving'.",
         "lessons": [
             {
                 "id": "m1-l1",
-                "title": "Lex Naturalis vs. Lex Scripta",
-                "duration": "15 mins"
+                "title": "Historical Context of the Right to Travel",
+                "duration": "10 min",
+                "content": "The 'Right to Travel' is a long-standing constitutional principle, primarily derived from the Privileges and Immunities Clause. Historically, it ensures that citizens of one state can enter and leave another state without being treated as 'aliens'.\n\n**The Sovereignty Myth:** Some argue that because 'traveling' is a right, the state cannot require a license to exercise it. They often cite cases like *Shapiro v. Thompson* or *Crandall v. Nevada*.\n\n**The Reality:** These cases protect the *movement* itself, not the *mode* of transportation. Federal and State courts have uniformly held that the state has a compelling interest in regulating the operation of dangerous machinery (motor vehicles) on public infrastructure to protect the lives of all 'natural persons'."
             },
             {
                 "id": "m1-l2",
-                "title": "The Magna Carta & Common Law",
-                "duration": "20 mins"
+                "title": "The 'Commercial Activity' Fallacy",
+                "duration": "12 min",
+                "content": "A core pillar of certain ideologies is that 'driving' only refers to those engaged in commerce for hire, and 'traveling' is for private individuals.\n\n**The Argument:** Adherents point to definitions in Black's Law Dictionary (specifically older editions) or the UCC to claim that 'driver' means 'one employed in conducting a coach'.\n\n**The Reality:** Statutes, not dictionaries, govern the law. Modern vehicle codes define 'driver' and 'operator' as any person in physical control of a vehicle on a public highway. Courts have repeatedly ruled that the use of public roads is a privilege subject to reasonable regulation, regardless of whether the trip is for business or pleasure."
             },
             {
                 "id": "m1-l3",
-                "title": "Constitutional Boundaries",
-                "duration": "25 mins"
+                "title": "Jurisdiction on the Highway",
+                "duration": "8 min",
+                "content": "Many attempt to 'reserve rights' during traffic stops using phrases like 'I do not consent' or 'I am a natural person'.\n\n**The Reality:** Jurisdiction is territorial. If you are physically located within a state's borders, you are subject to its laws. No contract is required for the law to apply. The 'Notice of No Consent' or UCC filings have zero legal weight in a traffic stop. Failure to provide a license or insurance registration leads to immediate legal consequences, not a 'win' for sovereignty."
+            }
+        ],
+        "quiz": [
+            {
+                "question": "Which legal principle allows states to require driver's licenses?",
+                "options": [
+                    "Maritime Law",
+                    "Police Power (regulating for public safety)",
+                    "UCC 1-308",
+                    "The 1871 Organic Act"
+                ],
+                "answer": 1,
+                "explanation": "The 'police power' is the capacity of the states to regulate behavior and enforce order within their territory for the betterment of the health, safety, morals, and general welfare of their inhabitants."
             }
         ]
     },
     {
-        "id": "rights-responsibilities",
-        "title": "Module 2: Rights & Responsibilities",
-        "description": "Balancing individual autonomy with the safety of the collective.",
+        "id": "m2",
+        "title": "Module 2: The 'Corporate U.S.' & The Strawman Myth",
+        "description": "Understanding the 1871 Organic Act and the truth behind 'ALL CAPS' names.",
         "lessons": [
             {
                 "id": "m2-l1",
-                "title": "Unalienable Rights Explorer",
-                "duration": "18 mins"
+                "title": "The 1871 Organic Act Explained",
+                "duration": "15 min",
+                "content": "A common conspiracy theory suggests that the District of Columbia Organic Act of 1871 secretly transformed the United States government into a private corporation.\n\n**The Facts:** The Act was simply a reorganization of the local government of Washington D.C. It consolidated the various governing bodies of the District into a single 'municipal corporation'. In legal terms, a 'municipal corporation' is just a way for a city to act as a legal entity (e.g., to sign contracts or sue/be sued). It did not change the sovereign status of the United States of America."
             },
             {
                 "id": "m2-l2",
-                "title": "The Social Contract in Practice",
-                "duration": "22 mins"
+                "title": "The 'Strawman' and Capitalization",
+                "duration": "10 min",
+                "content": "Adherents believe the government creates a 'strawman'—a corporate entity represented by your name in ALL CAPITAL LETTERS on birth certificates and IDs—to hold your debts and liabilities.\n\n**The Reality:** Courts have addressed the 'capitalization' argument thousands of times. Stylistic conventions (like using all caps for clarity on forms) have no legal significance. You as a 'natural person' and the 'person' named on the ID are one and the same under the law. There is no secret account at the Treasury linked to your Social Security number."
+            }
+        ],
+        "quiz": [
+            {
+                "question": "Does writing a name in ALL CAPITAL LETTERS create a separate legal entity?",
+                "options": [
+                    "Yes, it separates the flesh-and-blood man from the corporation.",
+                    "No, it is a formatting convention with no effect on legal identity.",
+                    "Only in Admiralty Court.",
+                    "Yes, unless you use a red thumbprint."
+                ],
+                "answer": 1,
+                "explanation": "Jurisprudence is clear: formatting, fonts, and capitalization do not alter the identity of the person subject to the law."
             }
         ]
     },
     {
-        "id": "navigating-systems",
-        "title": "Module 3: Navigating Modern Systems",
-        "description": "Practical safety and legal navigation in contemporary society.",
+        "id": "m3",
+        "title": "Module 3: The UCC and Admiralty Law Fallacies",
+        "description": "Why the Uniform Commercial Code doesn't stop criminal prosecution.",
         "lessons": [
             {
                 "id": "m3-l1",
-                "title": "Statutory Interpretation",
-                "duration": "30 mins"
+                "title": "UCC 1-308 and 'Without Prejudice'",
+                "duration": "10 min",
+                "content": "Some believe that by signing documents 'Without Prejudice UCC 1-308', they can reserve their rights and avoid 'contracting' with the state.\n\n**The Reality:** The UCC (Uniform Commercial Code) governs commercial transactions—buying and selling goods. It has no application to the state's power to enforce criminal or traffic laws. You cannot 'opt-out' of the law by using a business code."
             },
             {
                 "id": "m3-l2",
-                "title": "Public Safety Protocols",
-                "duration": "15 mins"
+                "title": "Admiralty vs. Common Law",
+                "duration": "12 min",
+                "content": "A common claim is that courts are secretly 'Admiralty Courts' because they have gold-fringed flags, and therefore they only have jurisdiction over those who consent.\n\n**The Reality:** The fringe on a flag is purely decorative (as ruled in *McCann v. Greenway* and other cases). Most importantly, jurisdiction is not voluntary. It is based on the Constitution and the laws of the land, which apply to everyone within the United States, regardless of their personal belief system."
             }
-        ]
-    },
-    {
-        "id": "safety-protocols",
-        "title": "Module 4: Safety & Community Protocols",
-        "description": "Practical skills for maintaining individual and community safety in complex legal environments.",
-        "lessons": [
+        ],
+        "quiz": [
             {
-                "id": "m4-l1",
-                "title": "Interaction with Authority",
-                "duration": "20 mins"
-            },
-            {
-                "id": "m4-l2",
-                "title": "Conflict De-escalation",
-                "duration": "25 mins"
-            },
-            {
-                "id": "m4-l3",
-                "title": "Emergency Coordination",
-                "duration": "15 mins"
+                "question": "What does the gold fringe on a flags in a courtroom signify legally?",
+                "options": [
+                    "It signifies Admiralty/Maritime jurisdiction.",
+                    "It means the court is operating under military law.",
+                    "Absolutely nothing; it is a decorative tradition.",
+                    "It signifies that the judge is a 'sovereign'."
+                ],
+                "answer": 2,
+                "explanation": "Courts have explicitly ruled that the presence or absence of fringe on a flag has no legal significance whatsoever."
             }
         ]
     }
