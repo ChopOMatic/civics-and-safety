@@ -40,7 +40,6 @@ function App() {
     const moduleId = activeModule.id;
     const lessonId = activeModule.lessons[currentLessonIndex].id;
 
-    // Update progress
     const moduleProgress = progress[moduleId] || [];
     if (!moduleProgress.includes(lessonId)) {
       setProgress({
@@ -49,7 +48,6 @@ function App() {
       });
     }
 
-    // Move to next lesson or quiz
     if (currentLessonIndex < activeModule.lessons.length - 1) {
       setCurrentLessonIndex(currentLessonIndex + 1);
       window.scrollTo(0, 0);
@@ -57,6 +55,21 @@ function App() {
       setIsQuizActive(true);
       window.scrollTo(0, 0);
     }
+  };
+
+  const handleQuizComplete = (certified) => {
+    if (certified) {
+      const moduleId = activeModule.id;
+      const moduleProgress = progress[moduleId] || [];
+      if (!moduleProgress.includes('quiz-passed')) {
+        setProgress({
+          ...progress,
+          [moduleId]: [...moduleProgress, 'quiz-passed']
+        });
+      }
+    }
+    setCurrentView('landing');
+    window.scrollTo(0, 0);
   };
 
   const isLessonComplete = (moduleId, lessonId) => {
@@ -120,10 +133,7 @@ function App() {
           <section className="module-content">
             <div className="content-parchment">
               {isQuizActive ? (
-                <Quiz module={activeModule} onComplete={() => {
-                  setCurrentView('landing');
-                  window.scrollTo(0, 0);
-                }} />
+                <Quiz module={activeModule} onComplete={handleQuizComplete} />
               ) : (
                 <>
                   <span className="lesson-number">Lesson {currentLessonIndex + 1} of {activeModule.lessons.length}</span>
@@ -178,92 +188,107 @@ function App() {
       {/* Hero Section */}
       <header className="hero">
         <div className="container">
-          <h1 className="title">Foundations of Liberty</h1>
+          <div className="judicial-seal">Lex • Veritas • Iustitia</div>
+          <h1 className="title">Judicial Remedial Curriculum</h1>
           <p className="subtitle">
-            A comprehensive remedial course on civics, the rule of law, and the
-            social contract. Grounded in history, designed for the future.
+            A logic-based restorative course on the Rule of Law, Territorial Jurisdiction,
+            and the Social Contract. Certified for Judicial Enforcement and Remedial Learning.
           </p>
           <div className="hero-cta">
-            <button className="primary">Begin Curriculum</button>
-            <button>View Syllabus</button>
+            <button className="primary" onClick={() => {
+              const element = document.getElementById('curriculum');
+              element?.scrollIntoView({ behavior: 'smooth' });
+            }}>Enter Curriculum</button>
+            <button variant="outline">Download Syllabus</button>
           </div>
         </div>
       </header>
 
       {/* Philosophy Section */}
       <section className="section container">
-        <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
-          <h2>Our Philosophy</h2>
-          <p style={{ marginTop: '1.5rem', color: 'var(--text-dim)' }}>
-            True freedom stems from understanding the structures that protect it.
-            Our curriculum focuses on the historical context of common law,
-            the evolution of constitutional governance, and the practical application
-            of civil rights in the modern era.
+        <div className="philosophy-header">
+          <h2>Educational Methodology</h2>
+          <p>
+            Understanding the law requires a bridge of logic. Our coursework uses
+            systematic deconstruction to help individuals reconcile their personal
+            beliefs with the established legal reality of modern jurisprudence.
           </p>
         </div>
 
         <div className="grid">
           <div className="card">
-            <h3>Foundational Law</h3>
+            <div className="card-icon">⚖️</div>
+            <h3>Linguistic Clarity</h3>
             <p>
-              Explore the origins of common law and the development of the
-              constitutional framework that governs our society.
+              Moving beyond the 'language trap' by understanding the specific
+              statutory definitions that govern our modern society.
             </p>
           </div>
           <div className="card">
-            <h3>Civil Responsibility</h3>
+            <div className="card-icon">🗺️</div>
+            <h3>Territorial Truth</h3>
             <p>
-              Understand the balance between individual rights and the collective
-              obligations that maintain a safe and stable community.
+              Understanding that jurisdiction is a function of geography and the
+              Constitution, ensuring order for all residents.
             </p>
           </div>
           <div className="card">
-            <h3>Modern Jurisprudence</h3>
+            <div className="card-icon">📜</div>
+            <h3>Precedent & Reality</h3>
             <p>
-              Learn how traditional legal principles translate into contemporary
-              statutes and the judicial system.
+              Walking through real case law to see the logical end-points of
+              various legal theories in actual courtrooms.
             </p>
           </div>
         </div>
       </section>
 
       {/* Curriculum Grid */}
-      <section className="section" style={{ background: 'var(--bg-main)' }}>
+      <section id="curriculum" className="section curriculum-section">
         <div className="container">
-          <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>The Curriculum</h2>
+          <h2 className="section-title">Required Mastery Modules</h2>
           <div className="grid">
-            {courses.map((course) => (
-              <div key={course.id} className="card module-card">
-                <span className="module-tag">Module {course.id.split('-').pop()}</span>
-                <h3>{course.title}</h3>
-                <p>{course.description}</p>
-                <ul className="lesson-list">
-                  {course.lessons.map(lesson => (
-                    <li key={lesson.id}>
-                      <span>{lesson.title}</span>
-                      <span className="duration">{lesson.duration}</span>
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  className="primary"
-                  style={{ width: '100%', marginTop: '1.5rem' }}
-                  onClick={() => startModule(course)}
-                >
-                  Enroll in Module
-                </button>
-              </div>
-            ))}
+            {courses.map((course) => {
+              const isLocked = course.id !== 'm1' && !progress[courses[courses.indexOf(course) - 1]?.id]?.includes('quiz-passed');
+
+              return (
+                <div key={course.id} className={`card module-card ${isLocked ? 'locked' : ''}`}>
+                  <div className="module-header">
+                    <span className="module-tag">Module {course.id.split('m').pop()}</span>
+                    {progress[course.id]?.includes('quiz-passed') && <span className="completed-badge">✓ Certified</span>}
+                  </div>
+                  <h3>{course.title}</h3>
+                  <p>{course.description}</p>
+
+                  <div className="module-footer">
+                    {isLocked ? (
+                      <div className="lock-notice">
+                        <span className="lock-icon">🔒</span> Complete previous module to unlock
+                      </div>
+                    ) : (
+                      <button
+                        className="primary full-width"
+                        onClick={() => startModule(course)}
+                      >
+                        {progress[course.id]?.includes('quiz-passed') ? 'Review Content' : 'Begin Module'}
+                      </button>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer>
+      <footer className="judicial-footer">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Civics & Safety Remedial Learning. All rights reserved.</p>
-          <p style={{ marginTop: '0.5rem', fontSize: '0.8rem' }}>
-            Educational purposes only. This platform does not provide legal advice.
+          <div className="footer-seal">Department of Judicial Remediation</div>
+          <p>&copy; {new Date().getFullYear()} Civics & Safety Remedial Learning Platform.</p>
+          <p className="disclaimer">
+            This platform provides educational content for judicial remedial purposes.
+            Successful completion does not constitute legal advice or representation.
           </p>
         </div>
       </footer>

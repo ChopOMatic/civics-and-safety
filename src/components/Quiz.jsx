@@ -8,6 +8,7 @@ const Quiz = ({ module, onComplete }) => {
     const [hasAnswered, setHasAnswered] = useState(false);
 
     const questions = module.quiz || [];
+    const minScoreRequired = 100; // Mandatory Mastery
 
     const handleAnswer = (index) => {
         if (hasAnswered) return;
@@ -30,29 +31,53 @@ const Quiz = ({ module, onComplete }) => {
         }
     };
 
+    const resetQuiz = () => {
+        setCurrentQuestion(0);
+        setShowResults(false);
+        setScore(0);
+        setSelectedAnswer(null);
+        setHasAnswered(false);
+    };
+
+    const finalScorePercent = Math.round((score / questions.length) * 100);
+    const isPassed = finalScorePercent >= minScoreRequired;
+
     if (showResults) {
         return (
             <div className="quiz-container results">
-                <h2>Knowledge Check Complete</h2>
-                <div className="score-circle">
-                    <span className="score">{Math.round((score / questions.length) * 100)}%</span>
+                <h2>Module Knowledge Assessment</h2>
+                <div className="score-circle" style={{ borderColor: isPassed ? '#22c55e' : '#ef4444' }}>
+                    <span className="score" style={{ color: isPassed ? '#22c55e' : '#ef4444' }}>{finalScorePercent}%</span>
                 </div>
-                <p>You have demonstrated a foundational understanding of the legal principles in {module.title}.</p>
-                <div className="lesson-footer">
-                    <button className="primary" onClick={onComplete}>Return to Curriculum</button>
-                </div>
+
+                {isPassed ? (
+                    <>
+                        <p><strong>Assessment Successful.</strong> You have demonstrated full logical mastery of the principles in {module.title}.</p>
+                        <div className="lesson-footer">
+                            <button className="primary" onClick={() => onComplete(true)}>Certified: Return to Curriculum</button>
+                        </div>
+                    </>
+                ) : (
+                    <>
+                        <p><strong>Assessment Unsuccessful.</strong> Judicial remediation requires 100% logical accuracy to ensure full understanding of the law.</p>
+                        <p className="subtitle">Please review the module content and attempt the assessment again.</p>
+                        <div className="lesson-footer">
+                            <button className="primary" onClick={resetQuiz}>Re-attempt Assessment</button>
+                        </div>
+                    </>
+                )}
             </div>
         );
     }
 
     const q = questions[currentQuestion];
 
-    if (!q) return <div>No questions available for this module.</div>;
+    if (!q) return <div>No assessment data available for this module.</div>;
 
     return (
         <div className="quiz-container">
             <div className="quiz-header">
-                <span className="quiz-tag">Knowledge Check</span>
+                <span className="quiz-tag">Remedial Assessment</span>
                 <h3>Question {currentQuestion + 1} of {questions.length}</h3>
             </div>
             <p className="question-text">{q.question}</p>
@@ -83,12 +108,14 @@ const Quiz = ({ module, onComplete }) => {
             {hasAnswered && (
                 <div className="explanation-box animate-in">
                     <p>
-                        <strong>{selectedAnswer === q.answer ? "✓ Correct" : "✗ Incorrect"}</strong>
+                        <strong style={{ color: selectedAnswer === q.answer ? '#166534' : '#991b1b' }}>
+                            {selectedAnswer === q.answer ? "✓ Logical Match" : "✗ Logical Discrepancy"}
+                        </strong>
                         <br />
                         {q.explanation}
                     </p>
-                    <button className="primary" style={{ marginTop: '1rem' }} onClick={nextQuestion}>
-                        {currentQuestion < questions.length - 1 ? 'Next Question' : 'View Final Score'}
+                    <button className="primary" style={{ marginTop: '1.5rem' }} onClick={nextQuestion}>
+                        {currentQuestion < questions.length - 1 ? 'Continue to Next Question' : 'Submit Assessment'}
                     </button>
                 </div>
             )}

@@ -5,15 +5,19 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 export async function generateInsight(lessonTitle, moduleTitle) {
     const prompt = `
-    You are a high-level legal scholar and civics educator specializing in debunking pseudolegal theories (specifically sovereign citizen ideologies).
+    You are a patient, logic-based civics educator specializing in helping individuals reconcile pseudolegal theories with established U.S. jurisprudence.
     
     The user is currently studying the lesson: "${lessonTitle}" within the module: "${moduleTitle}".
     
-    Provide a concise (2-3 sentences), authoritative "Deep Dive Analysis" that connects this lesson to actual U.S. jurisprudence. 
-    Focus on WHY the pseudo-legal arguments (like the right to travel, the 1871 Organic Act, or the Strawman theory) fail in court.
-    Use terms like "police power," "territorial jurisdiction," "statutory definition," and cite real concepts from Constitutional Law.
+    Provide a concise (2-3 sentences) "Legal Reality Check" that uses careful logic to bridge the gap between common misinterpretations and actual law. 
     
-    Maintain a respectful, educational, but firm tone. Do not use placeholders.
+    Guidelines:
+    1. DO NOT be confrontational or dismissive.
+    2. Use logical deconstruction (e.g., "While it is true that X, the legal application of Y requires Z because...").
+    3. Focus on established principles like the Police Power, Territorial Jurisdiction, and the Supremacy Clause.
+    4. Help the student see the internal logical consistency of the actual legal system.
+    
+    Tone: Patient, educational, authoritative but helpful.
   `;
 
     try {
@@ -26,7 +30,7 @@ export async function generateInsight(lessonTitle, moduleTitle) {
     } catch (error) {
         console.error("AI Generation Error:", error);
         return {
-            text: "Jurisprudential analysis unavailable. Please refer to the core lesson content for factual guidance.",
+            text: "Logical analysis unavailable. Please refer to the core lesson content for factual guidance on established legal principles.",
             status: 'fallback'
         };
     }
