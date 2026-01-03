@@ -247,9 +247,25 @@ function App() {
       <section id="curriculum" className="section curriculum-section">
         <div className="container">
           <h2 className="section-title">Required Mastery Modules</h2>
+
+          {/* Overall Progress Bar */}
+          <div className="overall-progress-container">
+            <div className="progress-labels">
+              <span>Curriculum Completion Progress</span>
+              <span>{Math.round((courses.filter(c => progress[c.id]?.includes('quiz-passed')).length / courses.length) * 100)}%</span>
+            </div>
+            <div className="progress-bar-bg">
+              <div
+                className="progress-bar-fill"
+                style={{ width: `${(courses.filter(c => progress[c.id]?.includes('quiz-passed')).length / courses.length) * 100}%` }}
+              ></div>
+            </div>
+          </div>
+
           <div className="grid">
             {courses.map((course) => {
               const isLocked = course.id !== 'm1' && !progress[courses[courses.indexOf(course) - 1]?.id]?.includes('quiz-passed');
+              const lessonCount = course.lessons.length;
 
               return (
                 <div key={course.id} className={`card module-card ${isLocked ? 'locked' : ''}`}>
@@ -258,6 +274,10 @@ function App() {
                     {progress[course.id]?.includes('quiz-passed') && <span className="completed-badge">✓ Certified</span>}
                   </div>
                   <h3>{course.title}</h3>
+                  <div className="module-stats">
+                    <span className="stat-item">{lessonCount} Sessions</span>
+                    <span className="stat-item">1 Assessment</span>
+                  </div>
                   <p>{course.description}</p>
 
                   <div className="module-footer">

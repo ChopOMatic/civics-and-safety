@@ -1,129 +1,333 @@
 [
     {
         "id": "m1",
-        "title": "Module 1: The Linguistic Deconstruction",
-        "description": "Understanding the difference between colloquial language and statutory law.",
+        "title": "Module 1: Language & The Definition Trap",
+        "description": "Deconstructing 'Legalese' and the logical pitfalls of colloquial interpretation.",
         "lessons": [
             {
                 "id": "m1-l1",
-                "title": "Legalese vs. English: The Definition Trap",
-                "duration": "15 min",
-                "content": "A common point of confusion in law is the assumption that words in statutes have the same meaning as they do in everyday conversation. This is a logical error. In legal drafting, terms are 'terms of art' with specific statutory definitions.\n\n**The Argument:** Many believe that the word 'understand' in a courtroom means 'to stand under' or to consent to another's authority.\n\n**The Reality:** In both common and legal use, 'understand' simply means 'to have a clear and certain knowledge of.' It is a cognitive state, not a jurisdictional one. When a judge asks if you understand your rights, they are ensuring you have the knowledge necessary for a fair trial, not seeking your 'consent' to be governed. Jurisdiction is a matter of law and territory, not a private contract entered into by using specific words."
+                "title": "Understand vs. Stand Under",
+                "duration": "10 min",
+                "content": "A cornerstone of many pseudolegal scripts is the belief that using certain common words constitutes a 'hidden contract.'\n\n**The Argument:** Adherents believe that when a judge asks 'Do you understand?', saying 'Yes' means 'I stand under your authority.' They believe this is a verbal contract that grants the court jurisdiction.\n\n**The Reality:** In legal practice, 'understand' has its standard meaning: 'to be fully aware of' or 'to comprehend.' When a judge asks if you understand, they are fulfilling a due process requirement to ensure you are mentally competent and aware of the charges against you. It is a protection for the defendant, not a trap for the court. Jurisdiction is not 'granted' by the defendant; it is an inherent power of the court over the geography and the subject matter."
             },
             {
                 "id": "m1-l2",
-                "title": "The Fallacy of 'Quantum Grammar'",
+                "title": "Quantum Grammar & Punctuation Magic",
                 "duration": "12 min",
-                "content": "Some legal theories suggest that by using specific punctuation (like colons or hyphens) or archaic phrasing, one can create a 'truth language' that overrides court rules.\n\n**The Argument:** Proponents suggest that names written in all capital letters or with colons (e.g., :First-Name: Last-Name) represent a separate legal entity from the 'flesh and blood' man.\n\n**The Reality:** Language in the legal system is a tool for communication, not a magical ritual. Courts look at the *intent* and the *identity* of the parties, not the font or punctuation. Writing a name in all caps is a standard formatting convention (like on a birth certificate) for clarity in databases. It does not create a 'corporate shell.' Whether your name is written in cursive, print, or all-caps, it refers to the same biological and legal person subject to the laws of the jurisdiction where you stand."
+                "content": "Some believe that using specific punctuation (colons, hyphens) can 'unlock' a secret legal status.\n\n**The Argument:** Proponents of 'Quantum Grammar' (like David Wynn Miller) believe that sentences without certain mathematical structures are null and void. They might write their names as ':First-Name: Last-Name' to represent a 'flesh and blood' man.\n\n**The Reality:** Law is a communication system, not a magical ritual. Courts look at the *intent* and the *facts* of a case. There has never been a single case where a court dismissed charges because of a colon in a name. In fact, using such nonsensical grammar is often cited by judges as evidence of a lack of competence or a deliberate attempt to obstruct justice."
+            },
+            {
+                "id": "m1-l3",
+                "title": "The 'Is' vs. 'Is Not' of Statutory Terms",
+                "duration": "15 min",
+                "content": "Statutory definitions often use the word 'includes' to expand a category, not to limit it.\n\n**The Argument:** If a law says 'Vehicle includes a motor vehicle,' a person might argue that because 'bicycle' isn't mentioned, it is excluded. Or more commonly, that 'Person includes a corporation' means only corporations are subject to the law.\n\n**The Reality:** In statutory construction, 'includes' is used as a term of enlargement. Just because a specific item is listed as an example (like a corporation) does not mean the general category (a person) is limited to that example. Natural persons are the primary subject of almost all laws, and corporations are 'included' so they can be held liable as well, not to replace natural persons."
             }
         ],
         "quiz": [
             {
-                "question": "In a legal context, what does the term 'understand' primarily refer to?",
+                "question": "When a judge asks if you 'understand' the charges, what is their primary legal goal?",
                 "options": [
-                    "A formal agreement to 'stand under' an authority.",
-                    "A cognitive confirmation that one has clear knowledge of a concept.",
-                    "A waiver of constitutional rights.",
-                    "A verbal contract for representation."
+                    "To trick you into a contract of consent.",
+                    "To ensure you have been provided with proper due process and comprehend the situation.",
+                    "To establish a 'Special Appearance' on the record.",
+                    "To verify you are a 'Natural Person' and not a corporation."
                 ],
                 "answer": 1,
-                "explanation": "Legal 'understanding' is about comprehension, ensuring the defendant is mentally present and capable. It carries no jurisdictional weight regarding 'consent' to the law."
+                "explanation": "Judges are constitutionally required to ensure defendants understand the proceedings against them. It is skip-proofing the trial, not a jurisdictional trap."
             }
         ]
     },
     {
         "id": "m2",
-        "title": "Module 2: Jurisdictional Reality & Moorish Claims",
-        "description": "The logic of territorial sovereignty and the limits of historical treaties.",
+        "title": "Module 2: Territorial Jurisdiction & The 14th Amendment",
+        "description": "Understanding that jurisdiction is a matter of geography, not consent.",
         "lessons": [
             {
                 "id": "m2-l1",
-                "title": "The 14th Amendment and Citizenship",
+                "title": "The Geography of Law",
                 "duration": "10 min",
-                "content": "Jurisdiction is not a voluntary choice; it is a reality based on geography and the Constitution.\n\n**The Argument:** Some claim that they were born 'free state citizens' and never consented to becoming 'federal citizens' under the 14th Amendment.\n\n**The Reality:** The 14th Amendment actually *protects* your rights by ensuring that 'all persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the State wherein they reside.' This definition is inclusive, not restrictive. You cannot opt-out of federal law while residing on U.S. soil any more than you can opt-out of the law of gravity while standing on the earth. Jurisdiction is a function of the 'Police Power'— the state's inherent authority to regulate for health, safety, and welfare within its borders."
+                "content": "Jurisdiction is primarily territorial, meaning it is defined by the physical space where an act occurs.\n\n**The Argument:** 'I do not consent to your jurisdiction, therefore you have no authority over me.'\n\n**The Reality:** Jurisdiction is not a subscription service you can opt out of. If you are physically standing on the soil of the State of Ohio, you are subject to the laws of Ohio. This is known as 'Territorial Jurisdiction.' Just as you are subject to the law of gravity regardless of your belief in it, you are subject to the laws of the land where your body is located."
             },
             {
                 "id": "m2-l2",
-                "title": "The Morocco Treaty and Land Claims",
+                "title": "The 14th Amendment: Protected, Not Bound",
+                "duration": "12 min",
+                "content": "The 14th Amendment defines what it means to be a citizen of the United States.\n\n**The Argument:** Some claim they are 'Free State Citizens' or 'Constitutional Citizens' but not '14th Amendment Citizens.' They believe the 14th Amendment turned citizens into 'corporate assets.'\n\n**The Reality:** Before the 14th Amendment, citizenship was poorly defined and often exclusionary (as seen in the Dred Scott case). The 14th Amendment *unified* citizenship, ensuring that anyone born or naturalized in the U.S. is both a citizen of the U.S. and the state they live in. This was a massive expansion of rights and federal protection, not a loss of sovereignty. It ensures every person has 'Equal Protection' under the law."
+            },
+            {
+                "id": "m2-l3",
+                "title": "United States v. Sloan: The Jurisdictional Rebuttal",
                 "duration": "15 min",
-                "content": "Adherents of certain ideologies (such as Moorish Nationals) cite the 1787 Treaty of Peace and Friendship with Morocco as proof of their immunity.\n\n**The Argument:** The treaty grants 'Moors' special status and exempts them from the laws governing other American citizens.\n\n**The Reality:** The 1787 Treaty was an international maritime and commerce agreement between two nations (the U.S. and Morocco). It was never intended to—and legally cannot—create a separate class of citizens within the United States who are immune to domestic criminal or traffic laws. In cases like *United States v. James*, courts have analyzed these claims and found them logically inconsistent with the Supremacy Clause of the Constitution, which establishes that federal and state laws apply to everyone within their respective territories."
+                "content": "Lorin Sloan made the argument that he was a 'freeborn, natural individual' and not a citizen of the United States subject to its taxes.\n\n**The Argument:** Because I didn't 'contract' with the U.S. government, I am a foreign entity to it.\n\n**The Reality:** The Seventh Circuit Court of Appeals (939 F.2d 498) was very clear: Sloan's arguments were 'preposterous' and 'strange.' The court ruled that the laws of the United States apply to all individuals within its borders, and identifying as a 'natural person' does not create an exemption from federal law. This case is a standard reference for why 'opting out' of U.S. citizenship while living in the U.S. is legally impossible."
             }
         ],
         "quiz": [
             {
-                "question": "What is the primary basis for a court's jurisdiction over an individual?",
+                "question": "According to the 14th Amendment, how is citizenship primarily established?",
                 "options": [
-                    "The individual's signed consent to be governed.",
-                    "The individual's physical presence within the territorial borders of the court's authority.",
-                    "The individual's membership in a specific ethnic or cultural group.",
-                    "The presence of a gold fringe on the courtroom flag."
+                    "By signing an 'Affidavit of Sovereignty'.",
+                    "By being born or naturalized in the United States and being subject to its jurisdiction.",
+                    "By a common-law declaration in a 'Special Appearance'.",
+                    "By excluding oneself from 'Corporate U.S.' status."
                 ],
                 "answer": 1,
-                "explanation": "Jurisdiction is 'territorial.' By being physically present in a state or territory, an individual is subject to the local and federal laws established to maintain order in that area."
+                "explanation": "The 14th Amendment's 'Citizenship Clause' is the definitive legal standard for U.S. citizenship, applying to all born or naturalized on U.S. soil."
             }
         ]
     },
     {
         "id": "m3",
-        "title": "Module 3: The 'Traveling' vs. 'Driving' Fallacy",
-        "description": "Deconstructing the misinterpretation of the 'Right to Travel'.",
+        "title": "Module 3: The 'Traveling' vs. 'Driving' Fallacy Part 1",
+        "description": "Deconstructing the most common traffic-stop script.",
         "lessons": [
             {
                 "id": "m3-l1",
-                "title": "The Right to Travel vs. The Method of Travel",
+                "title": "The Right to Travel De-mystified",
                 "duration": "15 min",
-                "content": "A frequent point of friction with law enforcement involves the claim of 'traveling' versus 'driving.'\n\n**The Argument:** Adherents cite cases like *Shapiro v. Thompson* to argue that the 'Right to Travel' is absolute and cannot be licensed or taxed.\n\n**The Reality:** This is a category error. The 'Right to Travel' is a constitutional right to move from state to state without being treated poorly as an outsider. It is *not* a right to operate high-speed machinery on public roads. The government has a compelling interest in ensuring that everyone operating a vehicle is competent and insured. Licensing is a regulation of the *method* of travel, which is a privilege, not the *right* to move. Every U.S. court has confirmed that the state can require a license for the operation of a motor vehicle on public highways for the safety of the public."
+                "content": "The 'Right to Travel' is often cited as a license to ignore traffic laws.\n\n**The Argument:** 'I have a constitutional right to travel. Therefore, the state cannot require me to have a driver's license, registration, or insurance.'\n\n**The Reality:** This is a misunderstanding of what the 'Right to Travel' actually is. As established in cases like *Shapiro v. Thompson* and *Saenz v. Roe*, the right to travel is about the right to move between states without being treated as a second-class citizen. It is *not* a right to operate a 4,000lb high-speed machine on public infrastructure. The state has a 'compelling interest' in public safety and can therefore regulate the *mode* of travel (driving) without infringing on the *right* to travel (moving your person)."
             },
             {
                 "id": "m3-l2",
-                "title": "The Black's Law Dictionary Error",
+                "title": "Driving as a 'Commercial Activity'",
                 "duration": "12 min",
-                "content": "Searching for definitions in legal dictionaries (like Black's) is a common tactic for finding 'hidden' meanings.\n\n**The Argument:** Older editions of Black's define 'driver' as one engaged in commerce, so private individuals aren't 'drivers.'\n\n**The Reality:** A dictionary is a reference for word usage, not a source of statutory law. The 'law' of your state is contained in the *State Vehicle Code*. If the state code defines a 'driver' as 'any person in physical control of a vehicle,' that definition is what governs in court. Citing a dictionary to override a state statute is logically equivalent to citing a cookbook to override a building permit; they are simply different categories of information."
+                "content": "A frequent claim is that 'driving' only applies to people engaged in business.\n\n**The Argument:** 'I am not a driver. A driver is one who is engaged in commerce. I am a private traveler, so the motor vehicle code doesn't apply to me.'\n\n**The Reality:** Every state's vehicle code defines 'driver' or 'operator' for itself. Usually, a driver is defined simply as 'any person who is in actual physical control of a vehicle.' These local statutory definitions are what matter in court, not a 19th-century definition from a dictionary. If you are behind the wheel and the engine is running, you meet the legal definition of a driver, regardless of whether you are being paid."
             }
         ],
         "quiz": [
             {
-                "question": "Why can the government require a driver's license even if 'traveling' is a right?",
+                "question": "What is the primary difference between the 'Right to Travel' and the activity of 'Driving'?",
                 "options": [
-                    "Because they need the revenue from license fees.",
-                    "Because the right to travel refers to movement, while operating a vehicle is an activity the state regulates for safety.",
-                    "Because individuals have unknowingly signed away their rights in a 'contract'.",
-                    "Because the U.S. is currently under Admiralty law."
+                    "There is no difference; both are absolute rights.",
+                    "Driving is a privilege and a regulated activity for public safety, while the right to travel is about the movement of persons across states.",
+                    "The right to travel only applies to ships in admiralty water.",
+                    "Driving is only for commerce, and traveling is for everyone else."
                 ],
                 "answer": 1,
-                "explanation": "The state uses its 'Police Power' to regulate dangerous activities (like driving) to protect all citizens, which is distinct from the general right to move freely between states."
+                "explanation": "Courts distinguish between the fundamental right to move one's person and the state-regulated privilege of using heavy machinery on public roads."
             }
         ]
     },
     {
         "id": "m4",
-        "title": "Module 4: The Strawman & The 1871 Fiscal Realities",
-        "description": "Explaining birth certificates, municipal corporations, and the lack of secret accounts.",
+        "title": "Module 4: The 'Traveling' vs. 'Driving' Fallacy Part 2",
+        "description": "Handling the 'injured party' and Black's Law Dictionary myths.",
         "lessons": [
             {
                 "id": "m4-l1",
-                "title": "The 1871 Organic Act Deconstructed",
+                "title": "The 'No Injured Party' Fallacy",
                 "duration": "15 min",
-                "content": "One of the most complex theories involves the belief that the U.S. became a private corporation in 1871.\n\n**The Argument:** The District of Columbia Organic Act of 1871 secretly bankrupt the republic and replaced common law with corporate law.\n\n**The Reality:** In 1871, the District of Columbia was the only major city without a unified municipal government. The Act simply created a 'municipal corporation' (a standard legal term for a city government) for the District of Columbia. It did not affect the federal government's status as a sovereign republic. Just as 'General Motors' is a corporation, 'The City of Chicago' is a municipal corporation. This doesn't mean the city is a for-profit business, but rather that it has the legal capacity to sign property leases and be sued. The rest of the U.S. remained under the same constitutional structure it had since 1789."
+                "content": "Many believe that if there is no victim, there is no crime.\n\n**The Argument:** 'Officer, who is the injured party? Where is the victim? Since there is no injury, you have no claim against me and must let me go.'\n\n**The Reality:** In law, many offenses are classified as 'crimes against the state' or 'regulatory offenses.' The state (representing the public) has the power to pass laws to *prevent* injury (like speeding limits) rather than just waiting for an injury to occur. When you break a traffic law, you are violating the 'social contract' with the public. The State of Ohio (or whatever state you are in) is the 'party' that brings the claim, as represented by the prosecutor."
             },
             {
                 "id": "m4-l2",
-                "title": "Birth Certificates and Secret Accounts",
+                "title": "Black's Law Dictionary: Reference vs. Law",
                 "duration": "12 min",
-                "content": "The 'Redemption' theory suggests that birth certificates are bonds used to borrow from the Treasury.\n\n**The Argument:** There is a secret account worth millions in your name that you can use to pay off debts.\n\n**The Reality:** A birth certificate is a Vital Record—it is evidence of a biological event used for census and health statistics. It is not a financial instrument. The U.S. Treasury does not maintain secret accounts for individuals. Attempting to 'pay' bills with pseudo-legal documents like 'Bills of Exchange' or 'Accepted for Value' notations is legally recognized as fraud. The only way to access the national wealth is through the economy and established financial systems, not through creative filings."
+                "content": "Quoting Black's Law Dictionary at an officer is a frequent tactic.\n\n**The Argument:** 'Black's Law Dictionary defines a driver as someone who is carrying on commerce. I am not carrying on commerce!'\n\n**The Reality:** Black's Law Dictionary is a reference book, not a source of legislation. It records how words have been used in the past, but it does not overwrite the actual law passed by your state legislature. If your state's *Revised Code* says you need a license to drive, that is the law. Using a dictionary to claim you are exempt from a statute is like using a history book to claim you don't have to pay current gas prices—it's interesting, but it doesn't change reality."
             }
         ],
         "quiz": [
             {
-                "question": "What is a 'municipal corporation' as used in the 1871 Organic Act?",
+                "question": "Who is the 'party' that brings a claim in a standard traffic or criminal case?",
                 "options": [
-                    "A secret organization that bankrupt the United States.",
-                    "A standard legal designation for a city government to act as a single legal entity.",
-                    "A private business owned by foreign interests.",
-                    "A way to turn citizens into 'corporate assets'."
+                    "The individual officer who pulled you over.",
+                    "The 'Natural Person' who was injured.",
+                    "The State (representing the public interest and the law).",
+                    "There is no party if there is no physical injury."
+                ],
+                "answer": 2,
+                "explanation": "Criminal and traffic cases are 'The People vs. [Defendant]' or 'The State vs. [Defendant]' because the violation is against the established laws of the community."
+            }
+        ]
+    },
+    {
+        "id": "m5",
+        "title": "Module 5: The 'Strawman' & 'ALL CAPS' Deception",
+        "description": "Understanding typographical conventions vs. legal identity.",
+        "lessons": [
+            {
+                "id": "m5-l1",
+                "title": "The Name Game: ALL CAPS vs. Cursive",
+                "duration": "15 min",
+                "content": "A high-frequency script involves challenging the spelling or formatting of a name on a docket.\n\n**The Argument:** 'The person JOHN DOE in all capital letters is a corporate entity or a trust. I am John-Henry: Doe, the flesh-and-blood man. You have the wrong person.'\n\n**The Reality:** This is a typographical myth. All-caps is a standard formatting choice for clarity in computer databases and court records. It has no legal significance whatsoever. Whether your name is written in all-caps, lowercase, or crayon, it refers to the same biological person. If you are the person who committed the act for which the charges were filed, you are the person the court is addressing."
+            },
+            {
+                "id": "m5-l2",
+                "title": "The 'Birth Certificate Trust' Myth",
+                "duration": "15 min",
+                "content": "Some believe the government creates a secret bank account when a birth certificate is filed.\n\n**The Argument:** 'My birth certificate is actually a security bond worth millions of dollars. The government uses it as collateral for debt, and I can access that money to pay my bills.'\n\n**The Reality:** A birth certificate is simply a vital record—proof of a birth event. It is not a financial instrument. No bank or government agency in the world recognizes a birth certificate as a bond. People who try to 'spend' this mythical money (by sending 'Bills of Exchange' to the Treasury) end up being charged with mail fraud or financial crimes."
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What is the legal significance of a name being written in ALL CAPITAL LETTERS on a court document?",
+                "options": [
+                    "It indicates a corporate entity separate from the 'flesh and blood' man.",
+                    "It is a typographical convention for clarity and has no impact on legal identity.",
+                    "It means the case is being tried under Admiralty Law.",
+                    "It signifies that the person is a 'ward of the court'."
                 ],
                 "answer": 1,
-                "explanation": "The term refers to the administrative structure of a city, allowing it to govern, own property, and enter into legal contracts for the benefit of its residents."
+                "explanation": "Capitalization is a stylistic choice of the government's record-keeping system and does not change the nature of the person involved."
+            }
+        ]
+    },
+    {
+        "id": "m6",
+        "title": "Module 6: Financial Alchemists & 'A4V'",
+        "description": "Deconstructing the fraudulent theories of 'debt elimination'.",
+        "lessons": [
+            {
+                "id": "m6-l1",
+                "title": "Accepted For Value (A4V)",
+                "duration": "15 min",
+                "content": "The 'Accepted for Value' theory suggests you can 'offset' your debts against the government's 'unlimited' credit.\n\n**The Argument:** If I receive a bill or a ticket, I can just write 'Accepted for Value' on it and return it to the Treasury to be paid from my 'Strawman' account.\n\n**The Reality:** This doesn't work. Private creditors (like banks) and the government require actual currency. Writing on a bill doesn't pay it. Continuing this behavior leads to foreclosures, repossessions, and criminal charges for passing 'fictitious instruments.' There is no 'secret credit'—wealth must meet the standard definition of legal tender."
+            },
+            {
+                "id": "m6-l2",
+                "title": "The 1099-OID Fraud",
+                "duration": "15 min",
+                "content": "Some believe they can get massive tax refunds by claiming their debts as 'original issue discount' income.\n\n**The Argument:** 'I can file a 1099-OID for my mortgage and car loan, claiming those debts were actually money given to the bank, and get a huge refund check from the IRS.'\n\n**The Reality:** This is blatant tax fraud. The IRS has a list of 'Frivolous Tax Positions,' and 1099-OID schemes are at the top of it. People who file these returns are subject to a $5,000 penalty immediately for filing a frivolous return, plus they risk federal prison for tax evasion. The 'money' doesn't exist; it's just a misinterpretation of a complex tax form."
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What happens if you try to pay a debt by writing 'Accepted for Value' on a bill?",
+                "options": [
+                    "The debt is legally discharged against your treasury account.",
+                    "The creditor treats the bill as unpaid, and you face potential late fees, foreclosure, or legal action.",
+                    "The government is required to pay it under UCC 1-308.",
+                    "It establishes you as the 'Executor' of the estate."
+                ],
+                "answer": 1,
+                "explanation": "'A4V' is a pseudolegal theory that has no recognition in any financial or legal system. It is considered a failure to pay."
+            }
+        ]
+    },
+    {
+        "id": "m7",
+        "title": "Module 7: The Admiralty & The Fringe",
+        "description": "Debunking the 'Gold Fringe' flag and maritime jurisdiction myths.",
+        "lessons": [
+            {
+                "id": "m7-l1",
+                "title": "The Gold Fringe Flag Myth",
+                "duration": "12 min",
+                "content": "A very popular visual detection script involves the flag in the courtroom.\n\n**The Argument:** 'There is a gold fringe on that American flag. That means this is an Admiralty Court (maritime law), and I am a sailor being tried at sea, not a citizen on land.'\n\n**The Reality:** The fringe on a flag is purely decorative. No U.S. law, court ruling, or military regulation says that a fringe changes the jurisdiction of a courtroom. It's like arguing that because a judge is wearing a black robe instead of a blue one, they only have power over people wearing black. It is a purely aesthetic element with zero legal weight."
+            },
+            {
+                "id": "m7-l2",
+                "title": "Admiralty vs. Common Law",
+                "duration": "15 min",
+                "content": "Many believe the 'True Law' of the land is 'Common Law' and that 'Statutory Law' is an illegitimate corporate replacement.\n\n**The Argument:** 'I only recognize Common Law jurisdiction. You are trying me under 'Commercial Law' or 'Admiralty Law' because you have a gold-fringed flag.'\n\n**The Reality:** This is a misunderstanding of how the legal system evolved. In most U.S. states, common law *is* part of the law, but it is supplemented and often replaced by *statutory law* (laws passed by the legislature). This is perfectly constitutional. Admiralty law only applies to very specific maritime issues (ships, salvage, etc.). Traffic court is not an admiralty court; it is a court of 'limited jurisdiction' established by state law to handle specific statutes."
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What does a gold fringe on an American flag signify in a courtroom?",
+                "options": [
+                    "The court is operating under Maritime (Admiralty) Law.",
+                    "The judge is actually a military officer.",
+                    "It is a decorative element and has no legal significance.",
+                    "The person being tried is a 'ward of the crown'."
+                ],
+                "answer": 2,
+                "explanation": "Every court to consider the 'flag fringe' argument has found it frivolous and decorative. It has no impact on jurisdiction."
+            }
+        ]
+    },
+    {
+        "id": "m8",
+        "title": "Module 8: The Moorish National Paradox",
+        "description": "Analyzing the 1787 Treaty and indigenous claims.",
+        "lessons": [
+            {
+                "id": "m8-l1",
+                "title": "The 1787 Treaty of Peace and Friendship",
+                "duration": "15 min",
+                "content": "Moorish American Nationals often cite an 18th-century treaty with Morocco.\n\n**The Argument:** 'The 1787 Treaty between the U.S. and Morocco exempts 'Moors' (Moroccans) from U.S. law. Since I identify as a Moor, your laws don't apply to me.'\n\n**The Reality:** The Treaty of 1787 was a treaty between two separate *nations*. It ensured that American ships would be safe from pirates and that commerce could proceed. It did *not* create a separate class of citizens within the United States who could ignore local laws. Any person physically present in the U.S. is subject to its laws, regardless of their self-identified ancestry or historical treaties between other nations."
+            },
+            {
+                "id": "m8-l2",
+                "title": "Indigenous Status & Consular Claims",
+                "duration": "15 min",
+                "content": "Some claim to be 'indigenous' or hold 'diplomatic immunity.'\n\n**The Argument:** 'I am an indigenous Moor/Washitaw. I am a diplomat of my own nation and have consular immunity.'\n\n**The Reality:** Diplomatic immunity is only granted by the U.S. Department of State to individuals representing recognized foreign governments. You cannot grant *yourself* diplomatic immunity. Furthermore, being 'indigenous' (even if proven) does not exempt an individual from the criminal laws of the state where they reside. The U.S. Supreme Court has been clear that even members of federally recognized tribes are subject to certain state and federal laws depending on where the act occurs."
+            }
+        ],
+        "quiz": [
+            {
+                "question": "Does the 1787 Treaty of Peace and Friendship with Morocco exempt U.S. residents from local criminal laws?",
+                "options": [
+                    "Yes, if they can prove Moorish ancestry.",
+                    "No, it was a treaty between nations regarding international commerce and does not apply to domestic law enforcement within the U.S.",
+                    "Only in 'Common Law' jurisdictions.",
+                    "Yes, but only for civil disputes."
+                ],
+                "answer": 1,
+                "explanation": "Treaties between sovereign nations do not grant individual immunity to residents from the laws of the territory they inhabit."
+            }
+        ]
+    },
+    {
+        "id": "m9",
+        "title": "Module 9: Courtroom Disruption & Oaths of Office",
+        "description": "Tactics of challenging the judge's authority.",
+        "lessons": [
+            {
+                "id": "m9-l1",
+                "title": "The 'Oath of Office' Challenge",
+                "duration": "15 min",
+                "content": "A frequent script involves asking the judge to produce their 'certified' oath of office.\n\n**The Argument:** 'Judge, produce your oath of office and your bond. If you cannot, you have no authority and are acting as a private citizen in a robe.'\n\n**The Reality:** A judge's authority comes from their appointment or election as verified by the state's commission. Their oath is usually on file with the Secretary of State or a similar office. A judge is not required to carry a paper copy of their oath and present it on demand like a driver's license. Challenging the oath is a 'collateral attack' that is almost never successful in a trial—if you believe a judge is not properly seated, that must be handled in a separate administrative or appellate proceeding, not by disrupting a hearing."
+            },
+            {
+                "id": "m9-l2",
+                "title": "Demanding a 'Public Bond'",
+                "duration": "12 min",
+                "content": "Some believe that every public official must have a private bond that can be 'liened.'\n\n**The Argument:** 'I want to see your bond number. Since you are harming me, I am going to put a lien on your personal property and 'pull' your bond.'\n\n**The Reality:** Most judges and police are covered by 'blanket' government insurance or are self-insured by the state. There is no 'private bond' you can easily lien. Furthermore, filing false liens against public officials is a serious felony in most states (known as paper terrorism). It can result in long prison sentences and massive fines, and it never results in the 'pulling' of a judge's authority."
+            }
+        ],
+        "quiz": [
+            {
+                "question": "What is the legal consequence of filing a 'false lien' against a judge or police officer?",
+                "options": [
+                    "The official loses their authority immediately.",
+                    "It is a form of 'Paper Terrorism' that can lead to severe criminal penalties and long prison terms.",
+                    "It forces the official to pay you out of their 'Strawman' account.",
+                    "It establishes 'Common Law' jurisdiction over the case."
+                ],
+                "answer": 1,
+                "explanation": "Filing fraudulent financial documents against public officials is a serious crime and does not affect their legal authority."
+            }
+        ]
+    },
+    {
+        "id": "m10",
+        "title": "Module 10: The Price of Sovereignty",
+        "description": "The real-world outcomes of pseudolegal theories.",
+        "lessons": [
+            {
+                "id": "m10-l1",
+                "title": "The 'Zero Percent' Success Rate",
+                "duration": "15 min",
+                "content": "It is important to look at the history of these arguments in the real world.\n\n**The Facts:** There is not a single recorded case in the history of the United States where a 'Sovereign Citizen' argument (traveling, strawman, 1871 act, gold fringe, etc.) has resulted in a victory on the merits. While some people claim 'wins' on YouTube, these are usually because of a prosecutor's error or a minor procedural issue, not because the 'sovereign' arguments were actually right. Over 100% of the time, these arguments fail when scrutinized by an actual judge.\n\n**The Outcome:** Following these scripts doesn't get you 'freedom'—it gets you higher fines, contempt of court charges, repossessed cars, and often, long stays in prison for things that could have been handled with a $150 ticket."
+            },
+            {
+                "id": "m10-l2",
+                "title": "The Logic of the 'Social Contract'",
+                "duration": "15 min",
+                "content": "Finally, we must understand why we have laws at all.\n\n**The Reality:** Laws are not a 'trap' or a 'conspiracy' to steal your labor. They are the rules we agree to so we can live together in the same space without constant conflict. Traffic laws ensure the person driving toward you stays on their side of the road. Tax laws fund the roads, the hospitals, and the emergency services we all rely on. Being a 'free man' in a society means having the freedom to live your life within a framework that protects *your* rights by limiting the actions of others that would harm you. True sovereignty isn't about being 'above' the law; it's about being a participant in the 'Rule of Law'."
+            }
+        ],
+        "quiz": [
+            {
+                "question": "Broadly speaking, what is the 'Rule of Law' and why is it essential?",
+                "options": [
+                    "It is a corporate conspiracy to control the 'flesh and blood' man.",
+                    "It is the principle that laws apply equally to all people, providing a stable and predictable framework for society.",
+                    "It is another term for Admiralty Law.",
+                    "It is a system that allows anyone to 'opt out' whenever they choose."
+                ],
+                "answer": 1,
+                "explanation": "The Rule of Law ensures that no one is above the law, and everyone is protected by it equally. It is the foundation of a stable society."
             }
         ]
     }
