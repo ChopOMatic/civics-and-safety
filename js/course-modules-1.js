@@ -171,7 +171,7 @@ module3: {
                 "Yes, but only for certain types of law."
             ],
             correct: 2,
-            explanation: "Courts have repeatedly rejected the "all-caps name" theory. It is not a valid legal defense."
+            explanation: "Courts have repeatedly rejected the 'all-caps name' theory. It is not a valid legal defense."
         }
     ]
 },
@@ -385,7 +385,7 @@ module7: {
     <p>Courts are created and authorized by government—federal or state. The U.S. Constitution establishes federal courts. State constitutions establish state courts. A group of private citizens cannot create a court with legal authority.</p>
 </div>
 
-<p>A "judgment" issued by a sovereign citizen "common law court" has zero legal value. It is not enforceable. A government official sentenced by a sovereign citizen court does not have to comply with it. These "courts" cannot::
+<p>A "judgment" issued by a sovereign citizen "common law court" has zero legal value. It is not enforceable. A government official sentenced by a sovereign citizen court does not have to comply with it. These "courts" cannot:
 - Compel witnesses to testify
 - Enforce judgment
 - Issue valid subpoenas
@@ -401,7 +401,8 @@ module7: {
 <p>Some particularly aggressive sovereign citizens have attempted to make "arrests" of government officials based on "common law court convictions." This is not lawful arrest. It is kidnapping, false imprisonment, or assault.</p>
 
 <h3>Legal Reality</h3>
-<p>If you believe a government official has committed a crime, you can:</n- File a complaint with law enforcement
+<p>If you believe a government official has committed a crime, you can:
+- File a complaint with law enforcement
 - Report to the prosecutor's office
 - File a complaint with professional licensing boards
 - Sue civilly if you were harmed</p>
